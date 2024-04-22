@@ -12,7 +12,7 @@
 >
 > 同时，Paper 在新版本提供了大量好用的 API，可以帮助插件开发人员以高性能、高拓展性编写插件。
 
-## 特点
+## ✨ 特点
 
 - 支持 [Folia](https://github.com/PaperMC/Folia)。
 - 支持多种数据存储模式（MySQL、MongoDB 等）。 
