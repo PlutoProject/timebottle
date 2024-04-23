@@ -4,6 +4,8 @@ import ink.nostal.timebottle.platform
 
 private const val FOLIA_CLASS = "io.papermc.paper.threadedregions.RegionizedServer"
 private const val PAPER_CLASS = "com.destroystokyo.paper.VersionHistoryManager"
+private val supportedForks = listOf("folia", "purpur", "pufferfish", "leaves", "leaf", "luminol", "lumina")
+private val platformVersion = platform.version.lowercase()
 
 val isFolia: Boolean = try {
     Class.forName(FOLIA_CLASS)
@@ -32,3 +34,9 @@ val minecraftVersion: Triple<Int, Int, Int> = run {
 }
 
 val isSupportedVersion = minecraftVersion.second >= 20
+
+val isSupportedFork = if (platformVersion.contains("paper")) {
+    true
+} else {
+    supportedForks.any { platformVersion.contains(it) }
+}
