@@ -1,5 +1,7 @@
 # timebottle
 
+**简体中文** | [English](https://github.com/nostalfinals/timebottle/blob/master/README_EN.md)
+
 🫙 适用于 Paper 服务器的漂流瓶插件。
 
 让漂流瓶来承载历史与记忆。将曾经的时刻投入大海，飘向未来。
@@ -27,6 +29,7 @@
 ## 🗯️ 交流
 
 - QQ 群: 487210851，[点此加入](https://qm.qq.com/q/bpMX2VOitO)。
+- [Discord 服务器](https://discord.gg/p5CUsfdA)
 
 ## 🔧 构建
 
