@@ -1,10 +1,7 @@
 package ink.nostal.timebottle
 
 import com.github.shynixn.mccoroutine.folia.SuspendingJavaPlugin
-import ink.nostal.timebottle.utils.isFolia
-import ink.nostal.timebottle.utils.isPaper
-import ink.nostal.timebottle.utils.isSupportedFork
-import ink.nostal.timebottle.utils.isSupportedVersion
+import ink.nostal.timebottle.utils.*
 import org.bukkit.Bukkit
 import org.bukkit.Server
 import org.bukkit.command.CommandSender
@@ -42,7 +39,7 @@ class TimeBottle : SuspendingJavaPlugin() {
             logger.info("Detected Folia, the plugin will enable support for it.")
         }
 
-        if (!isSupportedFork) {
+        if (!isSupportedPlatform) {
             logger.warning("You are using an unsupported Paper fork.")
             logger.warning("The plugin can still run, but we won't provide any support.")
         }
